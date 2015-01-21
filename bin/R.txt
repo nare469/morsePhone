@@ -235,6 +235,7 @@ int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ic_launcher 0x7f020057
+int drawable morse 0x7f020058
 int id Text1 0x7f05003c
 int id Text2 0x7f05003d
 int id action_bar 0x7f05001c
@@ -248,10 +249,11 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_settings 0x7f05003e
+int id action_settings 0x7f05003f
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
+int id button1 0x7f05003e
 int id checkbox 0x7f05002d
 int id collapseActionView 0x7f05000d
 int id default_activity_button 0x7f050028

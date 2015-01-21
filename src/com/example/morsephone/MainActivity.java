@@ -1,5 +1,7 @@
 package com.example.morsephone;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +12,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 
@@ -73,8 +76,17 @@ public class MainActivity extends ActionBarActivity {
 	 			return 'Y';
 	 		else if (str.equals("2211"))
 	 			return 'Z';
-	 		return ' ';
+	 		return '\0';
 	 	}
+	 	
+	 	public void copyText(View view) {
+	 		ClipboardManager c = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+	 		TextView t = (TextView)findViewById(R.id.Text2);
+	 		CharSequence s = t.getText();
+	 		ClipData clip = ClipData.newPlainText("MorseCode", s);
+	 		c.setPrimaryClip(clip);
+	 	}
+	 	
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);

@@ -12,12 +12,31 @@
         android:id="@+id/Text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text=""
+        android:textSize="30sp" />
+
     <TextView
-        android:layout_below="@id/Text1"
         android:id="@+id/Text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:layout_below="@+id/Text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:text=""
+        android:background="#DDDDDD"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:onClick="copyText"
+        android:text="Copy text" />
 
 </RelativeLayout>
